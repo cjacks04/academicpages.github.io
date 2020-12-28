@@ -82,7 +82,7 @@ Assignments and Grading
 -   3 Project Updates - (3%)
 -   Team Grade - (2%)
 
-Final grades are due in MySlice by Monday, September 28th 2020.
+Final grades are due in MySlice by Monday, April 12th 2021.
 
 Grading Policy
 --------------
@@ -283,7 +283,7 @@ Learning Objective: This module is intended to provide novice R learners with an
 
 Readings: Saltz & Stanton Ch. 1-3 <br/> Lab Assignment: [Boolean Logic](https://cjacks04.github.io/687/Lab%20Descriptions/1Boolean-Logic.nb.html)<br/> Homework Assignment: [Working with Vectors](https://cjacks04.github.io/687/Homework%20Descriptions/1Working-With-Vectors.nb.html) (Due: 2021-01-18)
 
-Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week1Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week1HW-Answers.html) <br/> [Slidedeck](https://cjacks04.github.io/687/Slides/Week1.html) ([.pdf version](https://cjacks04.github.io/687/Slides/pdf/Week1.pdf))
+Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week1Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week1HW-Answers.html) <br/> [Slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week1.pdf))
 
 *Supplemental*:
 
@@ -304,7 +304,7 @@ Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week1Lab-Answers.htm
 Readings: Saltz & Stanton Ch. 4-6<br/> Lab Assignment: [Data Frames & sorting](https://cjacks04.github.io/687/Lab%20Descriptions/2Datafames-Sorting.nb.html) <br/> Homework Assignment: [Manipulating data frames](https://cjacks04.github.io/687/Homework%20Descriptions/2Manipulating-Data-Frames.nb.html) (Due: 2021-01-25)
 - Project Update I (present during week 3 live session)
 
-Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week2Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week2HW-Answers.html)<br/> [Slidedeck](https://cjacks04.github.io/687/Slides/Week2.html) ([.pdf](https://cjacks04.github.io/687/Slides/pdf/Week2.pdf))
+Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week2Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week2HW-Answers.html)<br/> [Slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week2.pdf))
 
 *Supplemental*:
 
@@ -320,7 +320,7 @@ Learning Objective: Beyond learning the tools for computing and visualizing data
 
 Readings: Saltz & Stanton Ch. 7-9 <br/> Lab Assignment: [Descriptive Stats & Functions](https://cjacks04.github.io/687/Lab%20Descriptions/3Distributions-and-Functions.nb) <br/> Homework Assignment: [Cleaning and Munging Dataframes](https://cjacks04.github.io/687/Homework%20Descriptions/3Cleaning-Munging-dataframes.nb.html) (Due: 2021-02-01)
 
-Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week3Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week3HW-Answers.html)<br/> [Slidedeck](https://cjacks04.github.io/687/Slides/Week3.html) ([.pdf](https://cjacks04.github.io/687/Slides/pdf/Week3.pdf))
+Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week3Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week3HW-Answers.html)<br/> [Slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week3.pdf))
 
 *Supplemental*:
 
