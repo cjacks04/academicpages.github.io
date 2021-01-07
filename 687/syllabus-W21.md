@@ -117,6 +117,8 @@ There is one required book (below). I will provide additional and supplemental r
 **Required**
 - Saltz, Jeffrey S and Jeffrey M. Stanton. Introduction to Data Science. SAGE Publications, 2016. ([Free PDF](https://cjacks04.github.io/687/introDataScienceV4e.pdf) / [Amazon](https://www.amazon.com/Introduction-Data-Science-Jeffrey-Saltz/dp/150637753X/ref=asc_df_150637753X/?tag=hyprod-20&linkCode=df0&hvadid=312014159412&hvpos=1o1&hvnetw=g&hvrand=10120207497347879768&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032526&hvtargid=aud-801381245258:pla-444954370692&psc=1))
 
+    - [Book Code](https://cjacks04.github.io/687/CodeInBook.R)
+
 **Optional (available for purchase online)**
 - Adler, Joseph. [R in a Nutshell: A Desktop Quick Reference](http://shop.oreilly.com/product/0636920022008.do). O'Reilly Media, Inc., 2009,
 - Bruce, Peter and Andrew Bruce [Doing Data Science](http://shop.oreilly.com/product/0636920028529.do). O'Reilly Media, Inc., 2013.
