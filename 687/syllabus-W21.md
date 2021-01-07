@@ -17,7 +17,7 @@ You are required to complete the onboarding before the synchronous session (virt
 
 [Onboarding Survey](https://forms.gle/JzzVJXV3PfqBEimM9): You’ll be paired with other students for lab assignments and the final project. Be sure to add your responses before our first meeting.
 
-[Group Assignments](): Groups for the final project and weekly pairings for lab pair programming exercises.
+[Lab Pairings Assignments](https://cjacks04.github.io/687/PairProgramming.html): Groups for the final project and weekly pairings for lab pair programming exercises.
 
 [Join SLACK](https://slack.com/): This is the main communication platform between live sessions. If there are questions about the asynchronous content or homework assignments posting a comment here will ensure a quick response. You'll need to download the SLACK client to your machine and join our class organization titled [jackson-687-winter21](https://join.slack.com/t/syr-he64815/shared_invite/zt-kdy26ff9-yhGia6VlL0YVTUdV9jR9mg). I strongly encourage you to use a first and last name in your user name so that you don’t get messages intended for another student (e.g. coreyjackson or corey.jackson is better than corey because Slack may autocomplete the username and you may send a message to an unintended recipient).
 
