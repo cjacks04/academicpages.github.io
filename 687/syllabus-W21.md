@@ -283,7 +283,7 @@ Learning Objective: This module is intended to provide novice R learners with an
 
 Readings: Saltz & Stanton Ch. 1-3 <br/> Lab Assignment: [Boolean Logic](https://cjacks04.github.io/687/Lab%20Descriptions/1Boolean-Logic.nb.html)<br/> Homework Assignment: [Working with Vectors](https://cjacks04.github.io/687/Homework%20Descriptions/1Working-With-Vectors.nb.html) (Due: 2021-01-18)
 
-Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week1Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week1HW-Answers.html) <br/> [Slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week1.pdf))
+Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week1Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week1HW-Answers.html) <br/> [Live session slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week1.pdf)
 
 *Supplemental*:
 
@@ -304,7 +304,7 @@ Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week1Lab-Answers.htm
 Readings: Saltz & Stanton Ch. 4-6<br/> Lab Assignment: [Data Frames & sorting](https://cjacks04.github.io/687/Lab%20Descriptions/2Datafames-Sorting.nb.html) <br/> Homework Assignment: [Manipulating data frames](https://cjacks04.github.io/687/Homework%20Descriptions/2Manipulating-Data-Frames.nb.html) (Due: 2021-01-25)
 - Project Update I (present during week 3 live session)
 
-Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week2Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week2HW-Answers.html)<br/> [Slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week2.pdf))
+Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week2Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week2HW-Answers.html)<br/> [Live session slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week2.pdf)
 
 *Supplemental*:
 
@@ -320,7 +320,7 @@ Learning Objective: Beyond learning the tools for computing and visualizing data
 
 Readings: Saltz & Stanton Ch. 7-9 <br/> Lab Assignment: [Descriptive Stats & Functions](https://cjacks04.github.io/687/Lab%20Descriptions/3Distributions-and-Functions.nb) <br/> Homework Assignment: [Cleaning and Munging Dataframes](https://cjacks04.github.io/687/Homework%20Descriptions/3Cleaning-Munging-dataframes.nb.html) (Due: 2021-02-01)
 
-Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week3Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week3HW-Answers.html)<br/> [Slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week3.pdf))
+Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week3Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week3HW-Answers.html)<br/> [Live session slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week3.pdf)
 
 *Supplemental*:
 
@@ -330,7 +330,7 @@ Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week3Lab-Answers.htm
 
 Readings: Saltz & Stanton Ch. 10 <br/> Lab Assignment: [Sampling & Decisions Pt. 1](https://cjacks04.github.io/687/Lab%20Descriptions/4Sampling-DecisionMaking.nb) <br/> Homework Assignment: [Sampling & Decisions Pt. 2](https://cjacks04.github.io/687/Homework%20Descriptions/4Sampling-and-Decision(HW).nb.html) (Due: 2021-02-08)
 
-Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week4Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week4HW-Answers.html)<br/> [Slidedeck](https://cjacks04.github.io/687/Slides/Week4.html) ([.pdf](https://cjacks04.github.io/687/Slides/pdf/Week4.pdf))
+Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week4Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week4HW-Answers.html)<br/> [Live session slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week4.pdf)
 
 *Supplemental*:
 
@@ -348,7 +348,7 @@ Learning Objective: During this module, you’ll learn how to import and clean u
 Readings: Saltz & Stanton Ch. 11 <br/> Lab Assignment: [Storage Wars](https://cjacks04.github.io/687/Lab%20Descriptions/5Storage%20Wars.nb.html) <br/> Homework Assignment: [Getting Data](https://cjacks04.github.io/687/Homework%20Descriptions/5Getting-Data.nb.html) (Due: 2021-02-15)
 - Project Update II (present during week 6 live session)
 
-Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week5Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week5HW-Answers.html)<br/> [Slidedeck](https://cjacks04.github.io/687/Slides/Week5.html) ([.pdf](https://cjacks04.github.io/687/Slides/pdf/Week5.pdf))
+Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week5Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week5HW-Answers.html)<br/> [Live session slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week5.pdf)
 
 *Supplemental*:
 
@@ -364,7 +364,7 @@ Learning Objective: One of the most important steps in the data analysis process
 
 Readings: Saltz & Stanton Ch. 12 <br/> Lab Assignment: [Data Viz](https://cjacks04.github.io/687/Lab%20Descriptions/6DataViz.nb.html) <br/> Homework Assignment: [Visualizations](https://cjacks04.github.io/687/Homework%20Descriptions/6Visualizations.nb.html) (Due: 2021-02-22)
 
-Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week6Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week6HW-Answers.html)<br/> [Slidedeck](https://cjacks04.github.io/687/Slides/Week6.html) ([.pdf](https://cjacks04.github.io/687/Slides/pdf/Week6.pdf))
+Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week6Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week6HW-Answers.html)<br/> [Live session slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week6.pdf)
 
 *Supplemental*:
 
@@ -381,7 +381,7 @@ Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week6Lab-Answers.htm
 
 Readings: Saltz & Stanton Ch. 13 <br/> Lab Assignment: [Maps](https://cjacks04.github.io/687/Lab%20Descriptions/7maps.nb.html) <br/> Homework Assignment: [Working with Maps](https://cjacks04.github.io/687/Homework%20Descriptions/7Working-with-maps.nb.html) (Due 2021-03-01)
 
-Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week7Lab-Answers2.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week7HW-Answers.html)<br/> [Slidedeck](https://cjacks04.github.io/687/Slides/Week7.html) ([.pdf](https://cjacks04.github.io/687/Slides/pdf/Week7.pdf))
+Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week7Lab-Answers2.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week7HW-Answers.html)<br/> [Live session slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week7.pdf)
 
 *Supplemental*:
 
@@ -400,8 +400,8 @@ Here are a few resources you may want to bookmark: [Awesome R](https://awesome-r
 Readings: Saltz & Stanton Ch. 16 <br/> Lab Assignment: None <br/> Homework Assignment: [Linear modeling](https://cjacks04.github.io/687/Homework%20Descriptions/8Linear-Regression.nb.html) (Due 2021-03-08)
 - Project Update III (present during Week 9 live session)
 
-Answers: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week8HW-Answers.html)<br/> [Slidedeck - Short](https://cjacks04.github.io/687/Slides/Week8.html) ([.pdf](https://cjacks04.github.io/687/Slides/pdf/Week8.pdf))
-[Slidedeck - Linear Modeling](https://cjacks04.github.io/687/Slides/Week8_add.html) ([.pdf](https://cjacks04.github.io/687/Slides/pdf/Week8_add.pdf))
+Answers: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week8HW-Answers.html)<br/> [Slidedeck - Short](https://cjacks04.github.io/687/Slides/pdf/Week8.pdf))
+[Slidedeck - Linear Modeling](https://cjacks04.github.io/687/Slides/pdf/Week8_add.pdf))
 
 *Supplemental*:
 
@@ -422,7 +422,7 @@ Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week9Lab-Answers.htm
 
 Readings: Saltz & Stanton Ch. 14 - 15 <br/> Lab Assignment: [Text Mining Part II](https://cjacks04.github.io/687/Lab%20Descriptions/10textmining.nb.html) <br/> Homework Assignment: [Text Mining Part I](https://cjacks04.github.io/687/Homework%20Descriptions/10textmining.nb.html) (Due 2021-03-22)
 
-Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week10Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week10HW-Answers.html)<br/> [Slidedeck](https://cjacks04.github.io/687/Slides/Week10.html) ([.pdf](https://cjacks04.github.io/687/Slides/pdf/Week10.pdf))
+Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week10Lab-Answers.html) :: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week10HW-Answers.html)<br/> [Live session slidedeck](https://cjacks04.github.io/687/Slides/pdf/Week10.pdf)
 
 *Supplemental*:
 - To complete the homework you’ll need the following datasets: [MLK Speech](https://cjacks04.github.io/687/Datasets/MLKspeech.txt)
