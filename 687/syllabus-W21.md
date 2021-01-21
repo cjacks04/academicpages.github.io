@@ -17,7 +17,7 @@ You are required to complete the onboarding before the synchronous session (virt
 
 [Onboarding Survey](https://forms.gle/JzzVJXV3PfqBEimM9): You’ll be paired with other students for lab assignments and the final project. Be sure to add your responses before our first meeting.
 
-[Lab Pairings Assignments](https://cjacks04.github.io/687/PairProgramming.html): Groups for the final project and weekly pairings for lab pair programming exercises.
+[Lab Pairings Assignments](https://cjacks04.github.io/687/PairProgramming.html): Pairing for the weekly pairings for lab pair programming exercises.
 
 [Join SLACK](https://slack.com/): This is the main communication platform between live sessions. If there are questions about the asynchronous content or homework assignments posting a comment here will ensure a quick response. You'll need to download the SLACK client to your machine and join our class organization titled [jackson-687-winter21](https://join.slack.com/t/syr-he64815/shared_invite/zt-kdy26ff9-yhGia6VlL0YVTUdV9jR9mg). I strongly encourage you to use a first and last name in your user name so that you don’t get messages intended for another student (e.g. coreyjackson or corey.jackson is better than corey because Slack may autocomplete the username and you may send a message to an unintended recipient).
 
@@ -440,6 +440,44 @@ Final Project
 =============
 
 A major takeaway from this course is that communication skills are an integral component of effective data science. Whether you present to a large audience, a board of executives, or simply present an idea to a colleague over coffee, you must be able to convey your findings effectively. That said, all research, whether in industry, government, or nonprofit–is collaborative. Group work is a critical part of any data science career. To that end, you will be responsible for conducting a group project presentation and summary document of your research during the final session. For presentations, your grade is a function of the common group product and your individual contribution.
+
+Groups
+------
+
+<table style="width:100%;">
+<colgroup>
+<col width="8%" />
+<col width="91%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Group</th>
+<th>Members</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Sarah Bolton, Bibhuti Timalsina, Kekona Soon, Paul Tuck, Stephen Babcock</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Clayton Monroe, Leigh Sausville, Patrick Bush, Farahin Choudhury, Destiny McDaniel</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Victoria Breshears, Joshua James, Ashley Swinson, Robert Kiely, Sherhone Grant</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Chanel Murray, Tim Hulak, Lenerson Pyrrhus, Mark Diaz</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Charles Stenberg, Elias Jospeh, Christopher Kawamura</td>
+</tr>
+</tbody>
+</table>
 
 Final Project Deliverables
 --------------------------
