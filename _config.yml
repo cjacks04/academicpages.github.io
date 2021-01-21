@@ -82,9 +82,9 @@ analytics:
 author:
   name             : 
   avatar           : "profile.png"
-  bio              : "Postdoc @ University of Wisconsin, Madison"
+  bio              : "Anna Julia Postdoc @ University of Wisconsin, Madison"
   location         : "Madison, WI"
-  employer         : 
+  employer         : "University of Wisconsin - Madison"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=V6d9-t4AAAAJ&hl=en"
   email            : "cbjackson2@wisc.edu"
@@ -99,7 +99,7 @@ author:
   github           : "cjacks04"
   google_plus      :
   keybase          :
-  instagram        : ""
+  instagram        : 
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "corey-b-jackson/"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : ""
+  twitter          : 
   vine             :
   weibo            :
   xing             :
