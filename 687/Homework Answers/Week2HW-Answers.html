@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 <meta name="author" content="Corey Jackson" />
@@ -84,7 +84,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -146,6 +145,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -157,18 +157,6 @@ summary {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -191,23 +179,29 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Homework 2: Manipulating data frames (Answers)</h1>
 <h4 class="author">Corey Jackson</h4>
-<h4 class="date">2020-01-20 12:05:16</h4>
+<h4 class="date">2021-01-28 12:34:30</h4>
 
 </div>
 
 
 <p>Explore the mtcars dataset (which is already included in R). Copy the mtcars dataset into a new variable (called it myCars), so that if you mess up, you can start again very easily (by copying mtcars into myCars again).</p>
-<div id="step-1-what-is-the-hp-hp-stands-for-horse-power" class="section level3">
-<h3>Step 1: What is the hp (hp stands for “horse power”)</h3>
-<pre class="r"><code>myCars &lt;- mtcars
+<p>Explore the mtcars dataset (which is already included in R To see other datasets you can run <code>data()</code> in the Console). Copy the mtcars dataset into a new variable (called it myCars), so that if you mess up, you can start again very easily (by copying mtcars into myCars again).</p>
+<p>Note: To learn more about the mtcars dataset, run <code>??cars</code> in the R Console. This opens a window in R called &quot;Help&quot; where you can see which fields are included in the dataset and read a description of the dataset. The use of <code>??</code> allows you to read about functions and packages in R. Try <code>??base::max</code> which will show you information about the <code>max()</code> function inside the <code>base</code> package.</p>
+<pre class="r"><code># Since this RMarkdown document is self-containted, it doesn't know about the mtcars dataset in your RStudio/Console. You need to instantiate or copy over the mtcars dataset in this document. Below, I instantiate another dataframe into this document.
 
-#1) What is the highest hp?
-max(myCars$hp)</code></pre>
-<pre><code>## [1] 335</code></pre>
-<pre class="r"><code>#2) Which car has the highest hp?
-myCars[myCars$hp == max(myCars$hp),]</code></pre>
-<pre><code>##               mpg cyl disp  hp drat   wt qsec vs am gear carb
-## Maserati Bora  15   8  301 335 3.54 3.57 14.6  0  1    5    8</code></pre>
+coreys_iris_data &lt;- iris
+ 
+# copy the mtcars dataset below:
+myCars &lt;- mtcars</code></pre>
+<div id="step-1-what-is-the-hp-disp-stands-for-displacement" class="section level3">
+<h3>Step 1: What is the hp (disp stands for “Displacement”)</h3>
+<pre class="r"><code># 1 What is the highest displacement?
+max(myCars$disp)</code></pre>
+<pre><code>## [1] 472</code></pre>
+<pre class="r"><code># 2 Which car has the highest displacement?
+myCars[myCars$disp == max(myCars$disp),]</code></pre>
+<pre><code>##                     mpg cyl disp  hp drat   wt  qsec vs am gear carb
+## Cadillac Fleetwood 10.4   8  472 205 2.93 5.25 17.98  0  0    3    4</code></pre>
 </div>
 <div id="step-2-explore-mpg-mpg-stands-for-miles-per-gallon" class="section level3">
 <h3>Step 2: Explore mpg (mpg stands for “miles per gallon”)</h3>
@@ -251,7 +245,7 @@ head(orderedmpgdesc)</code></pre>
 ## Porsche 914-2  26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2</code></pre>
 </div>
 <div id="step-3-which-car-has-the-best-combination-of-mpg-and-hp" class="section level3">
-<h3>Step 3: Which car has the “best” combination of mpg and hp?</h3>
+<h3>Step 3: Which car has the &quot;best&quot; combination of mpg and hp?</h3>
 <ol start="6" style="list-style-type: decimal">
 <li>What logic did you use?</li>
 </ol>
@@ -262,7 +256,7 @@ head(orderedmpgdesc)</code></pre>
 <p>Lotus Europa</p>
 </div>
 <div id="step-4-which-car-has-best-car-combination-of-mpg-and-hp-where-mpg-and-hp-must-be-given-equal-weight" class="section level3">
-<h3>Step 4: Which car has “best”&quot; car combination of mpg and hp, where mpg and hp must be given equal weight?</h3>
+<h3>Step 4: Which car has &quot;best&quot;&quot; car combination of mpg and hp, where mpg and hp must be given equal weight?</h3>
 <pre class="r"><code>myCars$bestpower &lt;- myCars$hp/myCars$mpg
 myCars[which.max(myCars$bestpower),]</code></pre>
 <pre><code>##               mpg cyl disp  hp drat   wt qsec vs am gear carb bestpower
@@ -370,6 +364,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
