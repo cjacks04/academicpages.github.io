@@ -387,7 +387,7 @@ Answers: [Lab](https://cjacks04.github.io/687/Lab%20Answers/Week7Lab-Answers2.ht
 
 *Supplemental*:
 
--   To complete the homework assignment, you’ll need to download the [Median Income](https://www.dropbox.com/s/w40rxdqwconh49j/MedianZIP.xlsx?dl=0) dataset.
+-   To complete the homework assignment, you’ll need to download the [Median Income](https://cjacks04.github.io/687/Datasets/MedianZIP.xlsx) dataset.
 -   I don't use maps a lot, but this resource should be helpful [geocompr](https://geocompr.robinlovelace.net/adv-map.html) (Chapter 8)
 
 Modeling Data
