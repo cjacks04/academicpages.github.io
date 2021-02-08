@@ -223,7 +223,7 @@ summary {
 
 <h1 class="title toc-ignore">Homework 4: Sampling &amp; Decisions Pt. 2</h1>
 <h4 class="author">YOUR NAME</h4>
-<h4 class="date">2020-12-21 17:58:06</h4>
+<h4 class="date">2021-02-08 09:49:38</h4>
 
 </div>
 
@@ -232,9 +232,13 @@ summary {
 <p>Let's continue our exploration of sampling.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyBJbnN0YWxsIHBhY2thZ2VzIGlmIG5lY2Vzc2FyeS4gRm9yIHRoaXMgYXNzaWdubWVudCwgeW91J2xsIG5lZWQgdGhlIG1vbWVudHMgcGFja2FnZSB3aGljaCBjb250YWlucyB0aGUgc2tld25lc3MgZnVuY3Rpb24uIFJlbWVtYmVyLCBkbyBub3Qgd3JpdGUgaW5zdGFsbCBjb2RlIGluIHRoZSBtYXJrZG93biBkb2N1bWVudCwgaW5zdGFsbCB0aGUgcGFja2FnZXMgaW4gdGhlIGNvbnNvbmxlLiBcbiMgV2hlbiB5b3UgbmVlZCB0byB1c2UgYSBmdW5jdGlvbiB0aGF0IGlzIG5vdCBhIGJhc2UgUiBmdW5jdGlvbiwgeW91IG5lZWQgdG8gbG9hZCB0aGUgcGFja2FnZSBpbiB0aGUgbWFya2Rvd24gZG9jdW1lbnQuIFNvLCB0byBhY2Nlc3MgdGhlIHNrZXduZXNzIGZ1bmN0aW9uLCB5b3Ugc2hvbGQgbG9hZCB0aGUgbW9tZW50cyBwYWNrYWdlLiBKdXN0IHJlbW92ZSB0aGUgIyBpbiB0aGUgbGluZSBiZWxvdyB0byBsb2FkIHRoZSBtb21lbnRzIHBhY2thZ2UuIFxuIyBsaWJyYXJ5KG1vbWVudHMpXG5gYGBcbmBgYCJ9 -->
-<p><code>r</code>r # Install packages if necessary. For this assignment, you'll need the moments package which contains the skewness function. Remember, do not write install code in the markdown document, install the packages in the consonle. # When you need to use a function that is not a base R function, you need to load the package in the markdown document. So, to access the skewness function, you shold load the moments package. Just remove the # in the line below to load the moments package. # library(moments)</p>
-<pre><code></code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBJbnN0YWxsIHBhY2thZ2VzIGlmIG5lY2Vzc2FyeS4gRm9yIHRoaXMgYXNzaWdubWVudCwgeW91J2xsIG5lZWQgdGhlIG1vbWVudHMgcGFja2FnZSB3aGljaCBjb250YWlucyB0aGUgc2tld25lc3MgZnVuY3Rpb24uIFJlbWVtYmVyLCBkbyBub3Qgd3JpdGUgaW5zdGFsbCBjb2RlIGluIHRoZSBtYXJrZG93biBkb2N1bWVudCwgaW5zdGFsbCB0aGUgcGFja2FnZXMgaW4gdGhlIGNvbnNvbGUuICAgIFxuICAgIFxuXG4jIFdoZW4geW91IG5lZWQgdG8gdXNlIGEgZnVuY3Rpb24gdGhhdCBpcyBub3QgYSBiYXNlIFIgZnVuY3Rpb24sIHlvdSBuZWVkIHRvIGxvYWQgdGhlIHBhY2thZ2UgaW4gdGhlIG1hcmtkb3duIGRvY3VtZW50LiBTbywgdG8gYWNjZXNzIHRoZSBza2V3bmVzcyBmdW5jdGlvbiwgeW91IHNob2xkIGxvYWQgdGhlIG1vbWVudHMgcGFja2FnZS4gSnVzdCByZW1vdmUgdGhlICMgaW4gdGhlIGxpbmUgYmVsb3cgdG8gbG9hZCB0aGUgbW9tZW50cyBwYWNrYWdlLiAgICBcblxuIyBsaWJyYXJ5KG1vbWVudHMpXG5gYGAifQ== -->
+<pre class="r"><code># Install packages if necessary. For this assignment, you'll need the moments package which contains the skewness function. Remember, do not write install code in the markdown document, install the packages in the console.    
+    
+
+# When you need to use a function that is not a base R function, you need to load the package in the markdown document. So, to access the skewness function, you shold load the moments package. Just remove the # in the line below to load the moments package.    
+
+# library(moments)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -242,89 +246,62 @@ summary {
 <h3>Step 1: Write a summarizing function to understand the distribution of a vector</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5cbiMgMS4gVGhlIGZ1bmN0aW9uLCBjYWxsIGl0IOKAmHByaW50VmVjSW5mb+KAmSBzaG91bGQgdGFrZSBhIHZlY3RvciBhcyBpbnB1dCBcbiMgMi4gVGhlIGZ1bmN0aW9uIHNob3VsZCBwcmludCB0aGUgZm9sbG93aW5nIGluZm9ybWF0aW9uOiBcblxuIyBhLiBNZWFuIGIuIE1lZGlhbiBjLiBNaW4gJiBtYXggZC4gU3RhbmRhcmQgZGV2aWF0aW9uIGUuIFF1YW50aWxlcyAoYXQgMC4wNSBhbmQgMC45NSkgZi4gU2tld25lc3MgXG4gXG4jIDMuIFRlc3QgdGhlIGZ1bmN0aW9uIHdpdGggYSB2ZWN0b3IgdGhhdCBoYXMgKDEsMiwzLDQsNSw2LDcsOCw5LDEwLDUwKS4gXG4jIFlvdSBzaG91bGQgc2VlIHNvbWV0aGluZyBzdWNoIGFzOiAgXG4jIFsxXSBcXG1lYW46IDkuNTQ1NDU0NTQ1NDU0NTRcXFxuIyBbMV0gXFxtZWRpYW46IDZcXCBcbiMgWzFdIFxcbWluOiAxIG1heDogNTBcXCBcbiMgWzFdIFxcc2Q6IDEzLjcyMTI1MDkzNjg3NjJcXCBcbiMgWzFdIFxccXVhbnRpbGUgKDAuMDUgLSAwLjk1KTogMS41IC0tIDMwXFwgXG4jIFsxXSBcXHNrZXduZXNzOiAyLjYyMDM5NjMzNTYzNTc5XFxcblxuXG5gYGBcbmBgYCJ9 -->
-<p><code>r</code>r</p>
-</div>
-<div id="the-function-call-it-printvecinfo-should-take-a-vector-as-input" class="section level1">
-<h1>1. The function, call it ‘printVecInfo’ should take a vector as input</h1>
-</div>
-<div id="the-function-should-print-the-following-information" class="section level1">
-<h1>2. The function should print the following information:</h1>
-</div>
-<div id="a.-mean-b.-median-c.-min-max-d.-standard-deviation-e.-quantiles-at-0.05-and-0.95-f.-skewness" class="section level1">
-<h1>a. Mean b. Median c. Min &amp; max d. Standard deviation e. Quantiles (at 0.05 and 0.95) f. Skewness</h1>
-</div>
-<div id="test-the-function-with-a-vector-that-has-1234567891050." class="section level1">
-<h1>3. Test the function with a vector that has (1,2,3,4,5,6,7,8,9,10,50).</h1>
-</div>
-<div id="you-should-see-something-such-as" class="section level1">
-<h1>You should see something such as:</h1>
-</div>
-<div id="section" class="section level1">
-<h1>[1] : 9.54545454545454<br />
-# [1] : 6 </h1>
-</div>
-<div id="max-50" class="section level1">
-<h1>[1] : 1 max: 50 </h1>
-</div>
-<div id="section-1" class="section level1">
-<h1>[1] : 13.7212509368762 </h1>
-</div>
-<div id="section-2" class="section level1">
-<h1>[1] (0.05 - 0.95): 1.5 -- 30 </h1>
-</div>
-<div id="section-3" class="section level1">
-<h1>[1] : 2.62039633563579<br />
-</h1>
-<pre><code></code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyAxLiBUaGUgZnVuY3Rpb24sIGNhbGwgaXQg4oCYcHJpbnRWZWNJbmZv4oCZIHNob3VsZCB0YWtlIGEgdmVjdG9yIGFzIGlucHV0IFxuIyAyLiBUaGUgZnVuY3Rpb24gc2hvdWxkIHByaW50IHRoZSBmb2xsb3dpbmcgaW5mb3JtYXRpb246IFxuXG4jIGEuIE1lYW4gYi4gTWVkaWFuIGMuIE1pbiAmIG1heCBkLiBTdGFuZGFyZCBkZXZpYXRpb24gZS4gUXVhbnRpbGVzIChhdCAwLjA1IGFuZCAwLjk1KSBmLiBTa2V3bmVzcyBcbiBcbiMgMy4gVGVzdCB0aGUgZnVuY3Rpb24gd2l0aCBhIHZlY3RvciB0aGF0IGhhcyAoMSwyLDMsNCw1LDYsNyw4LDksMTAsNTApLiBcbiMgWW91IHNob3VsZCBzZWUgc29tZXRoaW5nIHN1Y2ggYXM6ICBcbiMgWzFdIFwibWVhbjogOS41NDU0NTQ1NDU0NTQ1NFwiXG4jIFsxXSBcIm1lZGlhbjogNlwiIFxuIyBbMV0gXCJtaW46IDEgbWF4OiA1MFwiIFxuIyBbMV0gXCJzZDogMTMuNzIxMjUwOTM2ODc2MlwiIFxuIyBbMV0gXCJxdWFudGlsZSAoMC4wNSAtIDAuOTUpOiAxLjUgLS0gMzBcIiBcbiMgWzFdIFwic2tld25lc3M6IDIuNjIwMzk2MzM1NjM1NzlcIlxuXG5cbmBgYCJ9 -->
+<pre class="r"><code># 1. The function, call it ‘printVecInfo’ should take a vector as input 
+# 2. The function should print the following information: 
+
+# a. Mean b. Median c. Min &amp; max d. Standard deviation e. Quantiles (at 0.05 and 0.95) f. Skewness 
+ 
+# 3. Test the function with a vector that has (1,2,3,4,5,6,7,8,9,10,50). 
+# You should see something such as:  
+# [1] &quot;mean: 9.54545454545454&quot;
+# [1] &quot;median: 6&quot; 
+# [1] &quot;min: 1 max: 50&quot; 
+# [1] &quot;sd: 13.7212509368762&quot; 
+# [1] &quot;quantile (0.05 - 0.95): 1.5 -- 30&quot; 
+# [1] &quot;skewness: 2.62039633563579&quot;
+</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
 <div id="step-2-creating-samples-in-a-jar" class="section level3">
 <h3>Step 2: Creating Samples in a Jar</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyA0LiBDcmVhdGUgYSB2YXJpYWJsZSDigJhqYXLigJkgdGhhdCBoYXMgNTAgcmVkIGFuZCA1MCBibHVlIG1hcmJsZXMgKGhpbnQ6IHRoZSBqYXIgY2FuIGhhdmUgc3RyaW5ncyBhcyBvYmplY3RzLCB3aXRoIHNvbWUgb2YgdGhlIHN0cmluZ3MgYmVpbmcg4oCYcmVk4oCZIGFuZCBzb21lIG9mIHRoZSBzdHJpbmdzIGJlaW5nIOKAmGJsdWXigJkgXG5cbiMgNS4gQ29uZmlybSB0aGVyZSBhcmUgNTAgcmVkcyBieSBzdW1taW5nIHRoZSBzYW1wbGVzIHRoYXQgYXJlIHJlZCBcblxuIyA2LiBTYW1wbGUgMTAg4oCYbWFyYmxlc+KAmSAocmVhbGx5IHN0cmluZ3MpIGZyb20gdGhlIGphci4gSG93IG1hbnkgYXJlIHJlZD8gV2hhdCB3YXMgdGhlIHBlcmNlbnRhZ2Ugb2YgcmVkIG1hcmJsZXM/XG5cbiMgNy4gUmVwZWF0ICM2LCBidXQgdGhpcyB0aW1lLCB1c2luZyB0aGUgcmVwbGljYXRlIGNvbW1hbmQgZHJhdyAxMCBzYW1wbGUgc2V0cyAoaS5lLiwgMTAgc2V0cyBvZiBkcmF3aW5nIDEwIG1hcmJsZXMpLiBDb21wdXRlIHRoZSBtZWFuIG51bWJlciBvZiByZWQgbWFyYmxlcyBpbiB0aGVzZSAxMCBzYW1wbGUgc2V0cy4gTGFzdHksIHJlcGVhdCB0aGUgYWJvdmUgcHJvY2VzcyAyMCB0aW1lcyB0byBnZXQgYSBsaXN0IG9mIDIwIG1lYW4gbnVtYmVycy4gVXNlIHlvdXIgcHJpbnRWZWNJbmZvIHRvIHNlZSBpbmZvcm1hdGlvbiBvZiB0aGUgc2FtcGxlcy4gQWxzbyBnZW5lcmF0ZSBhIGhpc3RvZ3JhbSBvZiB0aGUgc2FtcGxlc1xuXG4jIDguIFJlcGVhdCAjNywgYnV0IHRoaXMgdGltZSwgc2FtcGxlIHRoZSBqYXIgMTAwIHRpbWVzLiBZb3Ugc2hvdWxkIGdldCAyMCBudW1iZXJzLCB0aGlzIHRpbWUgZWFjaCBudW1iZXIgcmVwcmVzZW50cyB0aGUgbWVhbiBvZiBob3cgbWFueSByZWRzIHRoZXJlIHdlcmUgaW4gdGhlIDEwMCBzYW1wbGVzLiBVc2UgeW91ciBwcmludFZlY0luZm8gdG8gc2VlIGluZm9ybWF0aW9uIG9mIHRoZSBzYW1wbGVzLiBBbHNvIGdlbmVyYXRlIGEgaGlzdG9ncmFtIG9mIHRoZSBzYW1wbGVzLiBcblxuIyA5LiBSZXBlYXQgIzgsIGJ1dCB0aGlzIHRpbWUsIHJlcGxpY2F0ZSB0aGUgc2FtcGxpbmcgMTAwIHRpbWVzLiBZb3Ugc2hvdWxkIGdldCAxMDAgbnVtYmVycywgdGhpcyB0aW1lIGVhY2ggbnVtYmVyIHJlcHJlc2VudHMgdGhlIG1lYW4gb2YgaG93IG1hbnkgcmVkcyB0aGVyZSB3ZXJlIGluIHRoZSAxMDAgc2FtcGxlcy4gVXNlIHlvdXIgcHJpbnRWZWNJbmZvIHRvIHNlZSBpbmZvcm1hdGlvbiBvZiB0aGUgc2FtcGxlcy4gQWxzbyBnZW5lcmF0ZSBhIGhpc3RvZ3JhbSBvZiB0aGUgc2FtcGxlc1xuXG5gYGBcbmBgYCJ9 -->
-<p><code>r</code>r # 4. Create a variable ‘jar’ that has 50 red and 50 blue marbles (hint: the jar can have strings as objects, with some of the strings being ‘red’ and some of the strings being ‘blue’</p>
-</div>
-</div>
-<div id="confirm-there-are-50-reds-by-summing-the-samples-that-are-red" class="section level1">
-<h1>5. Confirm there are 50 reds by summing the samples that are red</h1>
-</div>
-<div id="sample-10-marbles-really-strings-from-the-jar.-how-many-are-red-what-was-the-percentage-of-red-marbles" class="section level1">
-<h1>6. Sample 10 ‘marbles’ (really strings) from the jar. How many are red? What was the percentage of red marbles?</h1>
-</div>
-<div id="repeat-6-but-this-time-using-the-replicate-command-draw-10-sample-sets-i.e.-10-sets-of-drawing-10-marbles.-compute-the-mean-number-of-red-marbles-in-these-10-sample-sets.-lasty-repeat-the-above-process-20-times-to-get-a-list-of-20-mean-numbers.-use-your-printvecinfo-to-see-information-of-the-samples.-also-generate-a-histogram-of-the-samples" class="section level1">
-<h1>7. Repeat #6, but this time, using the replicate command draw 10 sample sets (i.e., 10 sets of drawing 10 marbles). Compute the mean number of red marbles in these 10 sample sets. Lasty, repeat the above process 20 times to get a list of 20 mean numbers. Use your printVecInfo to see information of the samples. Also generate a histogram of the samples</h1>
-</div>
-<div id="repeat-7-but-this-time-sample-the-jar-100-times.-you-should-get-20-numbers-this-time-each-number-represents-the-mean-of-how-many-reds-there-were-in-the-100-samples.-use-your-printvecinfo-to-see-information-of-the-samples.-also-generate-a-histogram-of-the-samples." class="section level1">
-<h1>8. Repeat #7, but this time, sample the jar 100 times. You should get 20 numbers, this time each number represents the mean of how many reds there were in the 100 samples. Use your printVecInfo to see information of the samples. Also generate a histogram of the samples.</h1>
-</div>
-<div id="repeat-8-but-this-time-replicate-the-sampling-100-times.-you-should-get-100-numbers-this-time-each-number-represents-the-mean-of-how-many-reds-there-were-in-the-100-samples.-use-your-printvecinfo-to-see-information-of-the-samples.-also-generate-a-histogram-of-the-samples" class="section level1">
-<h1>9. Repeat #8, but this time, replicate the sampling 100 times. You should get 100 numbers, this time each number represents the mean of how many reds there were in the 100 samples. Use your printVecInfo to see information of the samples. Also generate a histogram of the samples</h1>
-<pre><code></code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyA0LiBDcmVhdGUgYSB2YXJpYWJsZSDigJhqYXLigJkgdGhhdCBoYXMgNTAgcmVkIGFuZCA1MCBibHVlIG1hcmJsZXMgKGhpbnQ6IHRoZSBqYXIgY2FuIGhhdmUgc3RyaW5ncyBhcyBvYmplY3RzLCB3aXRoIHNvbWUgb2YgdGhlIHN0cmluZ3MgYmVpbmcg4oCYcmVk4oCZIGFuZCBzb21lIG9mIHRoZSBzdHJpbmdzIGJlaW5nIOKAmGJsdWXigJkgXG5cbiMgNS4gQ29uZmlybSB0aGVyZSBhcmUgNTAgcmVkcyBieSBzdW1taW5nIHRoZSBzYW1wbGVzIHRoYXQgYXJlIHJlZCBcblxuIyA2LiBTYW1wbGUgMTAg4oCYbWFyYmxlc+KAmSAocmVhbGx5IHN0cmluZ3MpIGZyb20gdGhlIGphci4gSG93IG1hbnkgYXJlIHJlZD8gV2hhdCB3YXMgdGhlIHBlcmNlbnRhZ2Ugb2YgcmVkIG1hcmJsZXM/XG5cbiMgNy4gUmVwZWF0ICM2LCBidXQgdGhpcyB0aW1lLCB1c2luZyB0aGUgcmVwbGljYXRlIGNvbW1hbmQgZHJhdyAxMCBzYW1wbGUgc2V0cyAoaS5lLiwgMTAgc2V0cyBvZiBkcmF3aW5nIDEwIG1hcmJsZXMpLiBDb21wdXRlIHRoZSBtZWFuIG51bWJlciBvZiByZWQgbWFyYmxlcyBpbiB0aGVzZSAxMCBzYW1wbGUgc2V0cy4gTGFzdHksIHJlcGVhdCB0aGUgYWJvdmUgcHJvY2VzcyAyMCB0aW1lcyB0byBnZXQgYSBsaXN0IG9mIDIwIG1lYW4gbnVtYmVycy4gVXNlIHlvdXIgcHJpbnRWZWNJbmZvIHRvIHNlZSBpbmZvcm1hdGlvbiBvZiB0aGUgc2FtcGxlcy4gQWxzbyBnZW5lcmF0ZSBhIGhpc3RvZ3JhbSBvZiB0aGUgc2FtcGxlc1xuXG4jIDguIFJlcGVhdCAjNywgYnV0IHRoaXMgdGltZSwgc2FtcGxlIHRoZSBqYXIgMTAwIHRpbWVzLiBZb3Ugc2hvdWxkIGdldCAyMCBudW1iZXJzLCB0aGlzIHRpbWUgZWFjaCBudW1iZXIgcmVwcmVzZW50cyB0aGUgbWVhbiBvZiBob3cgbWFueSByZWRzIHRoZXJlIHdlcmUgaW4gdGhlIDEwMCBzYW1wbGVzLiBVc2UgeW91ciBwcmludFZlY0luZm8gdG8gc2VlIGluZm9ybWF0aW9uIG9mIHRoZSBzYW1wbGVzLiBBbHNvIGdlbmVyYXRlIGEgaGlzdG9ncmFtIG9mIHRoZSBzYW1wbGVzLiBcblxuIyA5LiBSZXBlYXQgIzgsIGJ1dCB0aGlzIHRpbWUsIHJlcGxpY2F0ZSB0aGUgc2FtcGxpbmcgMTAwIHRpbWVzLiBZb3Ugc2hvdWxkIGdldCAxMDAgbnVtYmVycywgdGhpcyB0aW1lIGVhY2ggbnVtYmVyIHJlcHJlc2VudHMgdGhlIG1lYW4gb2YgaG93IG1hbnkgcmVkcyB0aGVyZSB3ZXJlIGluIHRoZSAxMDAgc2FtcGxlcy4gVXNlIHlvdXIgcHJpbnRWZWNJbmZvIHRvIHNlZSBpbmZvcm1hdGlvbiBvZiB0aGUgc2FtcGxlcy4gQWxzbyBnZW5lcmF0ZSBhIGhpc3RvZ3JhbSBvZiB0aGUgc2FtcGxlc1xuXG5gYGAifQ== -->
+<pre class="r"><code># 4. Create a variable ‘jar’ that has 50 red and 50 blue marbles (hint: the jar can have strings as objects, with some of the strings being ‘red’ and some of the strings being ‘blue’ 
+
+# 5. Confirm there are 50 reds by summing the samples that are red 
+
+# 6. Sample 10 ‘marbles’ (really strings) from the jar. How many are red? What was the percentage of red marbles?
+
+# 7. Repeat #6, but this time, using the replicate command draw 10 sample sets (i.e., 10 sets of drawing 10 marbles). Compute the mean number of red marbles in these 10 sample sets. Lasty, repeat the above process 20 times to get a list of 20 mean numbers. Use your printVecInfo to see information of the samples. Also generate a histogram of the samples
+
+# 8. Repeat #7, but this time, sample the jar 100 times. You should get 20 numbers, this time each number represents the mean of how many reds there were in the 100 samples. Use your printVecInfo to see information of the samples. Also generate a histogram of the samples. 
+
+# 9. Repeat #8, but this time, replicate the sampling 100 times. You should get 100 numbers, this time each number represents the mean of how many reds there were in the 100 samples. Use your printVecInfo to see information of the samples. Also generate a histogram of the samples
+</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
 <div id="step-3-explore-the-airquality-dataset" class="section level3">
 <h3>Step 3: Explore the airquality dataset</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyAxMC4gU3RvcmUgdGhlIOKAmGFpcnF1YWxpdHnigJkgZGF0YXNldCBpbnRvIGEgdGVtcG9yYXJ5IHZhcmlhYmxlIFxuXG4jIDExLiBDbGVhbiB0aGUgZGF0YXNldCAoaS5lLiByZW1vdmUgdGhlIE5BcykgXG5cbiMgMTIuIEV4cGxvcmUgT3pvbmUsIFdpbmQgYW5kIFRlbXAgYnkgZG9pbmcgYSDigJhwcmludFZlY0luZm/igJkgb24gZWFjaCBhcyB3ZWxsIGFzIGdlbmVyYXRpbmcgYSBoaXN0b2dyYW0gZm9yIGVhY2hcblxuYGBgXG5gYGAifQ== -->
-<p><code>r</code>r # 10. Store the ‘airquality’ dataset into a temporary variable</p>
-</div>
-</div>
-<div id="clean-the-dataset-i.e.-remove-the-nas" class="section level1">
-<h1>11. Clean the dataset (i.e. remove the NAs)</h1>
-</div>
-<div id="explore-ozone-wind-and-temp-by-doing-a-printvecinfo-on-each-as-well-as-generating-a-histogram-for-each" class="section level1">
-<h1>12. Explore Ozone, Wind and Temp by doing a ‘printVecInfo’ on each as well as generating a histogram for each</h1>
-<pre><code></code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyAxMC4gU3RvcmUgdGhlIOKAmGFpcnF1YWxpdHnigJkgZGF0YXNldCBpbnRvIGEgdGVtcG9yYXJ5IHZhcmlhYmxlIFxuXG4jIDExLiBDbGVhbiB0aGUgZGF0YXNldCAoaS5lLiByZW1vdmUgdGhlIE5BcykgXG5cbiMgMTIuIEV4cGxvcmUgT3pvbmUsIFdpbmQgYW5kIFRlbXAgYnkgdXNpbmcgdGhlIOKAmHByaW50VmVjSW5mb+KAmSBmdW5jdGlvbiBvbiBlYWNoIG1lYXN1cmUgYXMgd2VsbCBhcyBnZW5lcmF0aW5nIGEgaGlzdG9ncmFtIGZvciBlYWNoIG1lYXN1cmVcblxuYGBgIn0= -->
+<pre class="r"><code># 10. Store the ‘airquality’ dataset into a temporary variable 
+
+# 11. Clean the dataset (i.e. remove the NAs) 
+
+# 12. Explore Ozone, Wind and Temp by using the ‘printVecInfo’ function on each measure as well as generating a histogram for each measure
+</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAnSG9tZXdvcmsgNDogU2FtcGxpbmcgJiBEZWNpc2lvbnMgUHQuIDInCmF1dGhvcjogIllPVVIgTkFNRSIKZGF0ZTogImByIFN5cy50aW1lKClgIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKCi0tLQoKTGV0J3MgY29udGludWUgb3VyIGV4cGxvcmF0aW9uIG9mIHNhbXBsaW5nLgoKYGBge3Igc2V0dXB9CiMgSW5zdGFsbCBwYWNrYWdlcyBpZiBuZWNlc3NhcnkuIEZvciB0aGlzIGFzc2lnbm1lbnQsIHlvdSdsbCBuZWVkIHRoZSBtb21lbnRzIHBhY2thZ2Ugd2hpY2ggY29udGFpbnMgdGhlIHNrZXduZXNzIGZ1bmN0aW9uLiBSZW1lbWJlciwgZG8gbm90IHdyaXRlIGluc3RhbGwgY29kZSBpbiB0aGUgbWFya2Rvd24gZG9jdW1lbnQsIGluc3RhbGwgdGhlIHBhY2thZ2VzIGluIHRoZSBjb25zb2xlLiAgICAKICAgIAoKIyBXaGVuIHlvdSBuZWVkIHRvIHVzZSBhIGZ1bmN0aW9uIHRoYXQgaXMgbm90IGEgYmFzZSBSIGZ1bmN0aW9uLCB5b3UgbmVlZCB0byBsb2FkIHRoZSBwYWNrYWdlIGluIHRoZSBtYXJrZG93biBkb2N1bWVudC4gU28sIHRvIGFjY2VzcyB0aGUgc2tld25lc3MgZnVuY3Rpb24sIHlvdSBzaG9sZCBsb2FkIHRoZSBtb21lbnRzIHBhY2thZ2UuIEp1c3QgcmVtb3ZlIHRoZSAjIGluIHRoZSBsaW5lIGJlbG93IHRvIGxvYWQgdGhlIG1vbWVudHMgcGFja2FnZS4gICAgCgojIGxpYnJhcnkobW9tZW50cykKYGBgCgoKIyMjIFN0ZXAgMTogV3JpdGUgYSBzdW1tYXJpemluZyBmdW5jdGlvbiB0byB1bmRlcnN0YW5kIHRoZSBkaXN0cmlidXRpb24gb2YgYSB2ZWN0b3IgCmBgYHtyfQojIDEuIFRoZSBmdW5jdGlvbiwgY2FsbCBpdCDigJhwcmludFZlY0luZm/igJkgc2hvdWxkIHRha2UgYSB2ZWN0b3IgYXMgaW5wdXQgCiMgMi4gVGhlIGZ1bmN0aW9uIHNob3VsZCBwcmludCB0aGUgZm9sbG93aW5nIGluZm9ybWF0aW9uOiAKCiMgYS4gTWVhbiBiLiBNZWRpYW4gYy4gTWluICYgbWF4IGQuIFN0YW5kYXJkIGRldmlhdGlvbiBlLiBRdWFudGlsZXMgKGF0IDAuMDUgYW5kIDAuOTUpIGYuIFNrZXduZXNzIAogCiMgMy4gVGVzdCB0aGUgZnVuY3Rpb24gd2l0aCBhIHZlY3RvciB0aGF0IGhhcyAoMSwyLDMsNCw1LDYsNyw4LDksMTAsNTApLiAKIyBZb3Ugc2hvdWxkIHNlZSBzb21ldGhpbmcgc3VjaCBhczogIAojIFsxXSAibWVhbjogOS41NDU0NTQ1NDU0NTQ1NCIKIyBbMV0gIm1lZGlhbjogNiIgCiMgWzFdICJtaW46IDEgbWF4OiA1MCIgCiMgWzFdICJzZDogMTMuNzIxMjUwOTM2ODc2MiIgCiMgWzFdICJxdWFudGlsZSAoMC4wNSAtIDAuOTUpOiAxLjUgLS0gMzAiIAojIFsxXSAic2tld25lc3M6IDIuNjIwMzk2MzM1NjM1NzkiCgoKYGBgCgojIyMgU3RlcCAyOiBDcmVhdGluZwlTYW1wbGVzCWluCWEJSmFyCmBgYHtyfQojIDQuIENyZWF0ZSBhIHZhcmlhYmxlIOKAmGphcuKAmSB0aGF0IGhhcyA1MCByZWQgYW5kIDUwIGJsdWUgbWFyYmxlcyAoaGludDogdGhlIGphciBjYW4gaGF2ZSBzdHJpbmdzIGFzIG9iamVjdHMsIHdpdGggc29tZSBvZiB0aGUgc3RyaW5ncyBiZWluZyDigJhyZWTigJkgYW5kIHNvbWUgb2YgdGhlIHN0cmluZ3MgYmVpbmcg4oCYYmx1ZeKAmSAKCiMgNS4gQ29uZmlybSB0aGVyZSBhcmUgNTAgcmVkcyBieSBzdW1taW5nIHRoZSBzYW1wbGVzIHRoYXQgYXJlIHJlZCAKCiMgNi4gU2FtcGxlIDEwIOKAmG1hcmJsZXPigJkgKHJlYWxseSBzdHJpbmdzKSBmcm9tIHRoZSBqYXIuIEhvdyBtYW55IGFyZSByZWQ/IFdoYXQgd2FzIHRoZSBwZXJjZW50YWdlIG9mIHJlZCBtYXJibGVzPwoKIyA3LiBSZXBlYXQgIzYsIGJ1dCB0aGlzIHRpbWUsIHVzaW5nIHRoZSByZXBsaWNhdGUgY29tbWFuZCBkcmF3IDEwIHNhbXBsZSBzZXRzIChpLmUuLCAxMCBzZXRzIG9mIGRyYXdpbmcgMTAgbWFyYmxlcykuIENvbXB1dGUgdGhlIG1lYW4gbnVtYmVyIG9mIHJlZCBtYXJibGVzIGluIHRoZXNlIDEwIHNhbXBsZSBzZXRzLiBMYXN0eSwgcmVwZWF0IHRoZSBhYm92ZSBwcm9jZXNzIDIwIHRpbWVzIHRvIGdldCBhIGxpc3Qgb2YgMjAgbWVhbiBudW1iZXJzLiBVc2UgeW91ciBwcmludFZlY0luZm8gdG8gc2VlIGluZm9ybWF0aW9uIG9mIHRoZSBzYW1wbGVzLiBBbHNvIGdlbmVyYXRlIGEgaGlzdG9ncmFtIG9mIHRoZSBzYW1wbGVzCgojIDguIFJlcGVhdCAjNywgYnV0IHRoaXMgdGltZSwgc2FtcGxlIHRoZSBqYXIgMTAwIHRpbWVzLiBZb3Ugc2hvdWxkIGdldCAyMCBudW1iZXJzLCB0aGlzIHRpbWUgZWFjaCBudW1iZXIgcmVwcmVzZW50cyB0aGUgbWVhbiBvZiBob3cgbWFueSByZWRzIHRoZXJlIHdlcmUgaW4gdGhlIDEwMCBzYW1wbGVzLiBVc2UgeW91ciBwcmludFZlY0luZm8gdG8gc2VlIGluZm9ybWF0aW9uIG9mIHRoZSBzYW1wbGVzLiBBbHNvIGdlbmVyYXRlIGEgaGlzdG9ncmFtIG9mIHRoZSBzYW1wbGVzLiAKCiMgOS4gUmVwZWF0ICM4LCBidXQgdGhpcyB0aW1lLCByZXBsaWNhdGUgdGhlIHNhbXBsaW5nIDEwMCB0aW1lcy4gWW91IHNob3VsZCBnZXQgMTAwIG51bWJlcnMsIHRoaXMgdGltZSBlYWNoIG51bWJlciByZXByZXNlbnRzIHRoZSBtZWFuIG9mIGhvdyBtYW55IHJlZHMgdGhlcmUgd2VyZSBpbiB0aGUgMTAwIHNhbXBsZXMuIFVzZSB5b3VyIHByaW50VmVjSW5mbyB0byBzZWUgaW5mb3JtYXRpb24gb2YgdGhlIHNhbXBsZXMuIEFsc28gZ2VuZXJhdGUgYSBoaXN0b2dyYW0gb2YgdGhlIHNhbXBsZXMKCmBgYAoKIyMjIFN0ZXAgMzogRXhwbG9yZSB0aGUgYWlycXVhbGl0eSBkYXRhc2V0CmBgYHtyfQojIDEwLiBTdG9yZSB0aGUg4oCYYWlycXVhbGl0eeKAmSBkYXRhc2V0IGludG8gYSB0ZW1wb3JhcnkgdmFyaWFibGUgCgojIDExLiBDbGVhbiB0aGUgZGF0YXNldCAoaS5lLiByZW1vdmUgdGhlIE5BcykgCgojIDEyLiBFeHBsb3JlIE96b25lLCBXaW5kIGFuZCBUZW1wIGJ5IHVzaW5nIHRoZSDigJhwcmludFZlY0luZm/igJkgZnVuY3Rpb24gb24gZWFjaCBtZWFzdXJlIGFzIHdlbGwgYXMgZ2VuZXJhdGluZyBhIGhpc3RvZ3JhbSBmb3IgZWFjaCBtZWFzdXJlCgpgYGAK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAnSG9tZXdvcmsgNDogU2FtcGxpbmcgJiBEZWNpc2lvbnMgUHQuIDInCmF1dGhvcjogIllPVVIgTkFNRSIKZGF0ZTogImByIFN5cy50aW1lKClgIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKCi0tLQoKTGV0J3MgY29udGludWUgb3VyIGV4cGxvcmF0aW9uIG9mIHNhbXBsaW5nLgoKYGBge3IgfQojIEluc3RhbGwgcGFja2FnZXMgaWYgbmVjZXNzYXJ5LiBGb3IgdGhpcyBhc3NpZ25tZW50LCB5b3UnbGwgbmVlZCB0aGUgbW9tZW50cyBwYWNrYWdlIHdoaWNoIGNvbnRhaW5zIHRoZSBza2V3bmVzcyBmdW5jdGlvbi4gUmVtZW1iZXIsIGRvIG5vdCB3cml0ZSBpbnN0YWxsIGNvZGUgaW4gdGhlIG1hcmtkb3duIGRvY3VtZW50LCBpbnN0YWxsIHRoZSBwYWNrYWdlcyBpbiB0aGUgY29uc29sZS4gICAgCiAgICAKCiMgV2hlbiB5b3UgbmVlZCB0byB1c2UgYSBmdW5jdGlvbiB0aGF0IGlzIG5vdCBhIGJhc2UgUiBmdW5jdGlvbiwgeW91IG5lZWQgdG8gbG9hZCB0aGUgcGFja2FnZSBpbiB0aGUgbWFya2Rvd24gZG9jdW1lbnQuIFNvLCB0byBhY2Nlc3MgdGhlIHNrZXduZXNzIGZ1bmN0aW9uLCB5b3Ugc2hvbGQgbG9hZCB0aGUgbW9tZW50cyBwYWNrYWdlLiBKdXN0IHJlbW92ZSB0aGUgIyBpbiB0aGUgbGluZSBiZWxvdyB0byBsb2FkIHRoZSBtb21lbnRzIHBhY2thZ2UuICAgIAoKIyBsaWJyYXJ5KG1vbWVudHMpCmBgYAoKCiMjIyBTdGVwIDE6IFdyaXRlIGEgc3VtbWFyaXppbmcgZnVuY3Rpb24gdG8gdW5kZXJzdGFuZCB0aGUgZGlzdHJpYnV0aW9uIG9mIGEgdmVjdG9yIApgYGB7cn0KIyAxLiBUaGUgZnVuY3Rpb24sIGNhbGwgaXQg4oCYcHJpbnRWZWNJbmZv4oCZIHNob3VsZCB0YWtlIGEgdmVjdG9yIGFzIGlucHV0IAojIDIuIFRoZSBmdW5jdGlvbiBzaG91bGQgcHJpbnQgdGhlIGZvbGxvd2luZyBpbmZvcm1hdGlvbjogCgojIGEuIE1lYW4gYi4gTWVkaWFuIGMuIE1pbiAmIG1heCBkLiBTdGFuZGFyZCBkZXZpYXRpb24gZS4gUXVhbnRpbGVzIChhdCAwLjA1IGFuZCAwLjk1KSBmLiBTa2V3bmVzcyAKIAojIDMuIFRlc3QgdGhlIGZ1bmN0aW9uIHdpdGggYSB2ZWN0b3IgdGhhdCBoYXMgKDEsMiwzLDQsNSw2LDcsOCw5LDEwLDUwKS4gCiMgWW91IHNob3VsZCBzZWUgc29tZXRoaW5nIHN1Y2ggYXM6ICAKIyBbMV0gIm1lYW46IDkuNTQ1NDU0NTQ1NDU0NTQiCiMgWzFdICJtZWRpYW46IDYiIAojIFsxXSAibWluOiAxIG1heDogNTAiIAojIFsxXSAic2Q6IDEzLjcyMTI1MDkzNjg3NjIiIAojIFsxXSAicXVhbnRpbGUgKDAuMDUgLSAwLjk1KTogMS41IC0tIDMwIiAKIyBbMV0gInNrZXduZXNzOiAyLjYyMDM5NjMzNTYzNTc5IgoKCmBgYAoKIyMjIFN0ZXAgMjogQ3JlYXRpbmcJU2FtcGxlcwlpbglhCUphcgpgYGB7cn0KIyA0LiBDcmVhdGUgYSB2YXJpYWJsZSDigJhqYXLigJkgdGhhdCBoYXMgNTAgcmVkIGFuZCA1MCBibHVlIG1hcmJsZXMgKGhpbnQ6IHRoZSBqYXIgY2FuIGhhdmUgc3RyaW5ncyBhcyBvYmplY3RzLCB3aXRoIHNvbWUgb2YgdGhlIHN0cmluZ3MgYmVpbmcg4oCYcmVk4oCZIGFuZCBzb21lIG9mIHRoZSBzdHJpbmdzIGJlaW5nIOKAmGJsdWXigJkgCgojIDUuIENvbmZpcm0gdGhlcmUgYXJlIDUwIHJlZHMgYnkgc3VtbWluZyB0aGUgc2FtcGxlcyB0aGF0IGFyZSByZWQgCgojIDYuIFNhbXBsZSAxMCDigJhtYXJibGVz4oCZIChyZWFsbHkgc3RyaW5ncykgZnJvbSB0aGUgamFyLiBIb3cgbWFueSBhcmUgcmVkPyBXaGF0IHdhcyB0aGUgcGVyY2VudGFnZSBvZiByZWQgbWFyYmxlcz8KCiMgNy4gUmVwZWF0ICM2LCBidXQgdGhpcyB0aW1lLCB1c2luZyB0aGUgcmVwbGljYXRlIGNvbW1hbmQgZHJhdyAxMCBzYW1wbGUgc2V0cyAoaS5lLiwgMTAgc2V0cyBvZiBkcmF3aW5nIDEwIG1hcmJsZXMpLiBDb21wdXRlIHRoZSBtZWFuIG51bWJlciBvZiByZWQgbWFyYmxlcyBpbiB0aGVzZSAxMCBzYW1wbGUgc2V0cy4gTGFzdHksIHJlcGVhdCB0aGUgYWJvdmUgcHJvY2VzcyAyMCB0aW1lcyB0byBnZXQgYSBsaXN0IG9mIDIwIG1lYW4gbnVtYmVycy4gVXNlIHlvdXIgcHJpbnRWZWNJbmZvIHRvIHNlZSBpbmZvcm1hdGlvbiBvZiB0aGUgc2FtcGxlcy4gQWxzbyBnZW5lcmF0ZSBhIGhpc3RvZ3JhbSBvZiB0aGUgc2FtcGxlcwoKIyA4LiBSZXBlYXQgIzcsIGJ1dCB0aGlzIHRpbWUsIHNhbXBsZSB0aGUgamFyIDEwMCB0aW1lcy4gWW91IHNob3VsZCBnZXQgMjAgbnVtYmVycywgdGhpcyB0aW1lIGVhY2ggbnVtYmVyIHJlcHJlc2VudHMgdGhlIG1lYW4gb2YgaG93IG1hbnkgcmVkcyB0aGVyZSB3ZXJlIGluIHRoZSAxMDAgc2FtcGxlcy4gVXNlIHlvdXIgcHJpbnRWZWNJbmZvIHRvIHNlZSBpbmZvcm1hdGlvbiBvZiB0aGUgc2FtcGxlcy4gQWxzbyBnZW5lcmF0ZSBhIGhpc3RvZ3JhbSBvZiB0aGUgc2FtcGxlcy4gCgojIDkuIFJlcGVhdCAjOCwgYnV0IHRoaXMgdGltZSwgcmVwbGljYXRlIHRoZSBzYW1wbGluZyAxMDAgdGltZXMuIFlvdSBzaG91bGQgZ2V0IDEwMCBudW1iZXJzLCB0aGlzIHRpbWUgZWFjaCBudW1iZXIgcmVwcmVzZW50cyB0aGUgbWVhbiBvZiBob3cgbWFueSByZWRzIHRoZXJlIHdlcmUgaW4gdGhlIDEwMCBzYW1wbGVzLiBVc2UgeW91ciBwcmludFZlY0luZm8gdG8gc2VlIGluZm9ybWF0aW9uIG9mIHRoZSBzYW1wbGVzLiBBbHNvIGdlbmVyYXRlIGEgaGlzdG9ncmFtIG9mIHRoZSBzYW1wbGVzCgpgYGAKCiMjIyBTdGVwIDM6IEV4cGxvcmUgdGhlIGFpcnF1YWxpdHkgZGF0YXNldApgYGB7cn0KIyAxMC4gU3RvcmUgdGhlIOKAmGFpcnF1YWxpdHnigJkgZGF0YXNldCBpbnRvIGEgdGVtcG9yYXJ5IHZhcmlhYmxlIAoKIyAxMS4gQ2xlYW4gdGhlIGRhdGFzZXQgKGkuZS4gcmVtb3ZlIHRoZSBOQXMpIAoKIyAxMi4gRXhwbG9yZSBPem9uZSwgV2luZCBhbmQgVGVtcCBieSB1c2luZyB0aGUg4oCYcHJpbnRWZWNJbmZv4oCZIGZ1bmN0aW9uIG9uIGVhY2ggbWVhc3VyZSBhcyB3ZWxsIGFzIGdlbmVyYXRpbmcgYSBoaXN0b2dyYW0gZm9yIGVhY2ggbWVhc3VyZQoKYGBgCg==</div>
 
 
 
