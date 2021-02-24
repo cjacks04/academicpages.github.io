@@ -402,8 +402,8 @@ Here are a few resources you may want to bookmark: [Awesome R](https://awesome-r
 Readings: Saltz & Stanton Ch. 16 <br/> Lab Assignment: None <br/> Homework Assignment: [Linear modeling](https://cjacks04.github.io/687/Homework%20Descriptions/8Linear-Regression.nb.html) (Due 2021-03-08)
 - Project Update III (present during Week 9 live session)
 
-Answers: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week8HW-Answers.html)<br/> [Slidedeck - Short](https://cjacks04.github.io/687/Slides/pdf/Week8.pdf))
-[Slidedeck - Linear Modeling](https://cjacks04.github.io/687/Slides/pdf/Week8_add.pdf))
+Answers: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week8HW-Answers.html)<br/> [Slidedeck - Data Modeling](https://cjacks04.github.io/687/Slides/pdf/Week8.pdf)
+[Slidedeck - Linear Modeling](https://cjacks04.github.io/687/Slides/pdf/Week8_add.pdf)
 
 *Supplemental*:
 
