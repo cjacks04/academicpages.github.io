@@ -408,7 +408,7 @@ Answers: [Homework](https://cjacks04.github.io/687/Homework%20Answers/Week8HW-An
 *Supplemental*:
 
 -   [Practice Mid-term](https://cjacks04.github.io/687/Exam/ExamReview.nb.html)
--   You'll need the ([fawn dataset](https://www.dropbox.com/s/ecwnm8nz8xl96wv/college.xls?dl=0)) to complete the homework.
+-   You'll need the ([fawn dataset](https://cjacks04.github.io/687/Datasets/college.xls?dl=0)) to complete the homework.
 
 ### Week 9 Association Rule Mining/Support Vector Machines
 
