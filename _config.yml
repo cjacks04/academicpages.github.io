@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Corey B. Jackson"
 title_separator          : "-"
 name                     : "Corey Jackson"
-description              : "peronal website of Corey B. Jackson, Anna Julia Cooper Postdoctoral Fellow. Corey Jackson. Syracuse. Cal. Citizen science. crowdsourcing."
+description              : "peronal website of Corey B. Jackson, Assistant Professor. Corey Jackson. Syracuse. Cal. Citizen science. crowdsourcing."
 url                      : https://cjacks04.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : 
   avatar           : "profile.png"
-  bio              : "Anna Julia Postdoc @ University of Wisconsin, Madison"
+  bio              : "Assistant Professor @ University of Wisconsin, Madison"
   location         : "Madison, WI"
   employer         : "University of Wisconsin - Madison"
   pubmed           : 
